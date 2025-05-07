@@ -134,6 +134,7 @@
     <ClInclude Include="ReportGenerator.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentLogin.h" />
+    <ClInclude Include="TeacherLogin.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ExamGenerator.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="ReportGenerator.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="StudentLogin.cpp" />
+    <ClCompile Include="TeacherLogin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

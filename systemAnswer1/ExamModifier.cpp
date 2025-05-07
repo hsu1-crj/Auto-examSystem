@@ -108,7 +108,7 @@ bool ExamModifier::replaceQuestionInExam() {
 // 自定义读取函数，支持处理多种编码格式
 std::vector<Question> ExamModifier::readExamFromFile(const std::string& examFilename) {
     std::vector<Question> questions;
-    std::ifstream file(examFilename);
+    std::ifstream file(examFilename);  // 不使用二进制模式，因为文件已经是正确编码
     if (!file.is_open()) {
         std::cerr << "无法打开文件: " << examFilename << std::endl;
         return questions;
@@ -120,21 +120,15 @@ std::vector<Question> ExamModifier::readExamFromFile(const std::string& examFile
     int difficulty = 1;
 
     while (std::getline(file, line)) {
-        // 去除BOM标记如果存在
-        if (!line.empty() && line.size() >= 3 &&
-            (unsigned char)line[0] == 0xEF &&
-            (unsigned char)line[1] == 0xBB &&
-            (unsigned char)line[2] == 0xBF) {
-            line = line.substr(3);
+        // 检查空行
+        if (line.empty()) {
+            continue;
         }
 
-        // 跳过空行
-        if (line.empty()) continue;
-
-        // 处理ID行
+        // 处理题目ID
         if (line.find('[') != std::string::npos && line.find(']') != std::string::npos) {
-            // 如果已经有了一个完整的题目，添加到列表中
-            if (!id.empty() && !content.empty()) {
+            // 如果已经解析了一个完整题目，添加到列表
+            if (!id.empty()) {
                 Question q(id, content, options, answers, tag, difficulty);
                 questions.push_back(q);
 
@@ -153,40 +147,56 @@ std::vector<Question> ExamModifier::readExamFromFile(const std::string& examFile
             if (start < end) {
                 id = line.substr(start, end - start);
             }
+            continue;
         }
-        // 处理题干行
-        else if (line.find("题干：") != std::string::npos) {
-            content = line.substr(line.find("题干：") + 5);
+
+        // 处理题干
+        if (line.find("题干：") != std::string::npos) {
+            content = line.substr(line.find("题干：") + 5);  // 长度为6的中文字符
+            continue;
         }
-        // 处理选项行
-        else if (line.find("选项：") != std::string::npos) {
-            std::string optLine = line.substr(line.find("选项：") + 5);
-            std::istringstream iss(optLine);
-            options.clear();
+
+        // 处理选项
+        if (line.find("选项：") != std::string::npos) {
+            std::string optionsLine = line.substr(line.find("选项：") + 5);
+            std::istringstream iss(optionsLine);
             std::string opt;
             while (iss >> opt) {
                 options.push_back(opt);
             }
+            continue;
         }
-        // 处理答案行
-        else if (line.find("答案：") != std::string::npos) {
-            std::string ansLine = line.substr(line.find("答案：") + 5);
-            std::istringstream iss(ansLine);
-            answers.clear();
+
+        // 处理答案
+        if (line.find("答案：") != std::string::npos) {
+            std::string answersLine = line.substr(line.find("答案：") + 5);
+            std::istringstream iss(answersLine);
             std::string ans;
+
+            // 使用逗号分隔答案
             while (std::getline(iss, ans, ',')) {
-                answers.push_back(ans);
+                // 去除可能的空白
+                ans.erase(0, ans.find_first_not_of(" \t"));
+                ans.erase(ans.find_last_not_of(" \t") + 1);
+
+                if (!ans.empty()) {
+                    answers.push_back(ans);
+                }
             }
+            continue;
         }
-        // 处理知识点行
-        else if (line.find("知识点：") != std::string::npos) {
-            tag = line.substr(line.find("知识点：") + 8);
+
+        // 处理知识点
+        if (line.find("知识点：") != std::string::npos) {
+            tag = line.substr(line.find("知识点：") + 7);  // 长度为9的中文字符
+            continue;
         }
-        // 处理难度行
-        else if (line.find("难度：") != std::string::npos) {
-            std::string diffStr = line.substr(line.find("难度：") + 5);
+
+        // 处理难度
+        if (line.find("难度：") != std::string::npos) {
+            std::string difficultyStr = line.substr(line.find("难度：") + 5);
             try {
-                difficulty = std::stoi(diffStr);
+                difficulty = std::stoi(difficultyStr);
             }
             catch (...) {
                 difficulty = 1;
@@ -195,163 +205,50 @@ std::vector<Question> ExamModifier::readExamFromFile(const std::string& examFile
     }
 
     // 添加最后一个题目
-    if (!id.empty() && !content.empty()) {
+    if (!id.empty()) {
         Question q(id, content, options, answers, tag, difficulty);
         questions.push_back(q);
     }
 
-    file.close();
-
-    // 如果仍然为空，尝试用二进制方式读取并处理
-    if (questions.empty()) {
-        questions = readExamFromBinaryFile(examFilename);
-    }
-
     return questions;
 }
-
 // 尝试从二进制文件中读取题目，处理不同编码
-std::vector<Question> ExamModifier::readExamFromBinaryFile(const std::string& examFilename) {
-    std::vector<Question> questions;
-    std::ifstream file(examFilename, std::ios::binary);
-    if (!file.is_open()) {
-        return questions;
-    }
 
-    // 读取整个文件内容
-    std::string content((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
-    file.close();
-
-    // 检测BOM并移除
-    bool hasBOM = false;
-    if (content.size() >= 3 &&
-        (unsigned char)content[0] == 0xEF &&
-        (unsigned char)content[1] == 0xBB &&
-        (unsigned char)content[2] == 0xBF) {
-        content = content.substr(3);
-        hasBOM = true;
-    }
-
-    // 解析内容
-    std::istringstream iss(content);
-    std::string line;
-    std::string id, questionContent, tag;
-    std::vector<std::string> options, answers;
-    int difficulty = 1;
-
-    while (std::getline(iss, line)) {
-        // 跳过空行
-        if (line.empty()) continue;
-
-        // 处理ID行
-        if (line.find('[') != std::string::npos && line.find(']') != std::string::npos) {
-            // 如果已经有了一个完整的题目，添加到列表中
-            if (!id.empty() && !questionContent.empty()) {
-                Question q(id, questionContent, options, answers, tag, difficulty);
-                questions.push_back(q);
-
-                // 重置变量
-                id = "";
-                questionContent = "";
-                tag = "";
-                options.clear();
-                answers.clear();
-                difficulty = 1;
-            }
-
-            // 提取ID
-            size_t start = line.find('[') + 1;
-            size_t end = line.find(']');
-            if (start < end) {
-                id = line.substr(start, end - start);
-            }
-        }
-        // 尝试查找"题干："或者类似的内容，即使有乱码也尝试匹配
-        else if (line.find("题干") != std::string::npos) {
-            size_t pos = line.find("题干");
-            questionContent = line.substr(pos + 2); // 跳过"题干"和可能的分隔符
-        }
-        // 尝试查找"选项："或者类似的内容
-        else if (line.find("选项") != std::string::npos) {
-            size_t pos = line.find("选项");
-            std::string optLine = line.substr(pos + 2); // 跳过"选项"和可能的分隔符
-            std::istringstream optIss(optLine);
-            options.clear();
-            std::string opt;
-            while (optIss >> opt) {
-                options.push_back(opt);
-            }
-        }
-        // 尝试查找"答案："或者类似的内容
-        else if (line.find("答案") != std::string::npos) {
-            size_t pos = line.find("答案");
-            std::string ansLine = line.substr(pos + 2); // 跳过"答案"和可能的分隔符
-            std::istringstream ansIss(ansLine);
-            answers.clear();
-            std::string ans;
-            while (std::getline(ansIss, ans, ',')) {
-                answers.push_back(ans);
-            }
-        }
-        // 尝试查找"知识点："或者类似的内容
-        else if (line.find("知识点") != std::string::npos) {
-            size_t pos = line.find("知识点");
-            tag = line.substr(pos + 3); // 跳过"知识点"和可能的分隔符
-        }
-        // 尝试查找"难度："或者类似的内容
-        else if (line.find("难度") != std::string::npos) {
-            size_t pos = line.find("难度");
-            std::string diffStr = line.substr(pos + 2); // 跳过"难度"和可能的分隔符
-            // 尝试提取数字
-            for (char c : diffStr) {
-                if (isdigit(c)) {
-                    difficulty = c - '0';
-                    break;
-                }
-            }
-        }
-    }
-
-    // 添加最后一个题目
-    if (!id.empty() && !questionContent.empty()) {
-        Question q(id, questionContent, options, answers, tag, difficulty);
-        questions.push_back(q);
-    }
-
-    return questions;
-}
 
 bool ExamModifier::writeExamToFile(const std::string& examFilename, const std::vector<Question>& examQuestions) {
-    // 使用标准的ofstream以ANSI编码写入，与原始生成方式保持一致
-    std::ofstream ofs(examFilename);
+    std::ofstream ofs(examFilename);  // 不使用二进制模式，文件会以本地编码格式保存
     if (!ofs.is_open()) {
         return false;
     }
 
     for (const auto& question : examQuestions) {
-        ofs << "[" << question.getId() << "]\n"
-            << "题干：" << question.getContent() << "\n"
-            << "选项：";
+        ofs << "[" << question.getId() << "]" << std::endl;
+        ofs << "题干：" << question.getContent() << std::endl;
 
-        // 处理选项
+        ofs << "选项：";
         std::vector<std::string> options = question.getOptions();
         for (size_t i = 0; i < options.size(); ++i) {
             ofs << options[i];
-            if (i < options.size() - 1) ofs << " ";
+            if (i < options.size() - 1) {
+                ofs << " ";
+            }
         }
+        ofs << std::endl;
 
-        ofs << "\n答案：";
+        ofs << "答案：";
         std::vector<std::string> answers = question.getAnswer();
         for (size_t i = 0; i < answers.size(); ++i) {
             ofs << answers[i];
-            if (i < answers.size() - 1) ofs << ",";
+            if (i < answers.size() - 1) {
+                ofs << ",";
+            }
         }
+        ofs << std::endl;
 
-        ofs << "\n知识点：" << question.getTag() << "\n"
-            << "难度：" << question.getDifficulty() << "\n\n";
+        ofs << "知识点：" << question.getTag() << std::endl;
+        ofs << "难度：" << question.getDifficulty() << std::endl << std::endl;
     }
 
-    ofs.close();
     return true;
 }
 
@@ -361,101 +258,33 @@ void ExamModifier::displayExamQuestions(const std::vector<Question>& examQuestio
         std::cout << "题目 " << i << ":" << std::endl;
         std::cout << "[" << examQuestions[i].getId() << "]" << std::endl;
 
-        // 清理题干中的乱码
-        std::string content = examQuestions[i].getContent();
-        std::string cleanedContent = cleanChineseText(content);
-        std::cout << "题干：" << cleanedContent << std::endl;
+        // 直接显示内容，不进行任何过滤
+        std::cout << "题干：" << examQuestions[i].getContent() << std::endl;
 
-        // 清理选项中的乱码
         std::cout << "选项：";
         std::vector<std::string> options = examQuestions[i].getOptions();
         for (size_t j = 0; j < options.size(); ++j) {
-            std::string cleanedOption = cleanChineseText(options[j]);
-            std::cout << cleanedOption;
+            std::cout << options[j];
             if (j < options.size() - 1) std::cout << " ";
         }
         std::cout << std::endl;
 
-        // 清理答案中的乱码
         std::cout << "答案：";
         std::vector<std::string> answers = examQuestions[i].getAnswer();
         for (size_t j = 0; j < answers.size(); ++j) {
-            std::string cleanedAnswer = cleanChineseText(answers[j]);
-            std::cout << cleanedAnswer;
+            std::cout << answers[j];
             if (j < answers.size() - 1) std::cout << ",";
         }
         std::cout << std::endl;
 
-        // 清理知识点中的乱码
-        std::string tag = examQuestions[i].getTag();
-        std::string cleanedTag = cleanChineseText(tag);
-        std::cout << "知识点：" << cleanedTag << std::endl;
-
+        std::cout << "知识点：" << examQuestions[i].getTag() << std::endl;
         std::cout << "难度：" << examQuestions[i].getDifficulty() << std::endl << std::endl;
     }
 }
 
 // 添加一个新的辅助方法用于清理文本中的乱码
+// 如果您不想删除这个函数，可以修改它
 std::string ExamModifier::cleanChineseText(const std::string& text) {
-    std::string cleaned;
-    for (size_t i = 0; i < text.length(); ++i) {
-        unsigned char c = text[i];
-
-        // 如果是可见的ASCII字符，保留
-        if (c >= 32 && c <= 126) {
-            cleaned.push_back(c);
-            continue;
-        }
-
-        // 如果是C++, C#等编程语言常见符号前的乱码，直接跳过
-        if (i + 1 < text.length() && text[i + 1] == '+') {
-            if (text.substr(i + 1, 2) == "++") {
-                cleaned.append("C++");
-                i += 2; // 跳过 "++"
-                continue;
-            }
-        }
-
-        // 如果是常见选项前的乱码（例如A.B.C.D.前的乱码），替换为正确的选项标识
-        if (i + 1 < text.length() && text[i + 1] == '.') {
-            if (i + 2 < text.length()) {
-                char nextChar = text[i + 2];
-                // 如果乱码后面紧跟着选项，如".const"中的const
-                if (isalpha(nextChar) || isdigit(nextChar)) {
-                    // 判断这是第几个选项
-                    size_t optionPos = cleaned.length();
-                    int optionIndex = -1;
-
-                    // 找出已经处理的选项数量
-                    size_t pos = 0;
-                    while ((pos = cleaned.find(".", pos)) != std::string::npos) {
-                        optionIndex++;
-                        pos++;
-                    }
-
-                    // 根据选项索引添加正确的选项标识
-                    switch (optionIndex + 1) {
-                    case 1: cleaned.append("A."); break;
-                    case 2: cleaned.append("B."); break;
-                    case 3: cleaned.append("C."); break;
-                    case 4: cleaned.append("D."); break;
-                    case 5: cleaned.append("E."); break;
-                    default: cleaned.append("?."); break;
-                    }
-                    i += 1; // 跳过 "."
-                    continue;
-                }
-            }
-        }
-
-        // 处理常见的中文乱码模式
-        // 这里可以添加更多的乱码模式识别和替换规则
-
-        // 默认情况：跳过不可见的字符
-        if (c < 32 || c > 126) {
-            continue;
-        }
-    }
-
-    return cleaned;
+    // 直接返回原文本，不进行任何过滤
+    return text;
 }

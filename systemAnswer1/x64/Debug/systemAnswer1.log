@@ -1,6 +1,2 @@
-﻿  QuestionModifier.cpp
-  main.cpp
-D:\cppPractice\systemAnswer1\systemAnswer1\QuestionModifier.cpp(191,34): warning C4101: “e”: 未引用的局部变量
-D:\cppPractice\systemAnswer1\systemAnswer1\main.cpp(109,23): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-  正在生成代码...
+﻿  TeacherLogin.cpp
   systemAnswer1.vcxproj -> D:\cppPractice\systemAnswer1\x64\Debug\systemAnswer1.exe
