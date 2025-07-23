@@ -194,13 +194,13 @@ bool QuestionModifier::modifyQuestionDifficulty(Question& question) {
     }
 }
 
-int QuestionModifier::findQuestionIndex(const std::string& id) {
+int QuestionModifier::findQuestionIndex(const std::string& id) {//寻找题目ID
     for (size_t i = 0; i < questions.size(); ++i) {
         if (questions[i].getId() == id) {
-            return static_cast<int>(i);
+            return static_cast<int>(i);//转换为int
         }
     }
-    return -1;
+    return -1;//无
 }
 
 void QuestionModifier::displayQuestion(const Question& question) {

@@ -79,11 +79,11 @@ void ReportGenerator::generateWeeklyReport(const std::string& studentId) {
         report << std::endl;
 
         // 添加报告生成时间
-        time_t now = time(nullptr);
+        time_t now = time(nullptr);//time_t获取时间，并存储到now
         struct tm t;
-        localtime_s(&t, &now);
-        char timeBuf[64];
-        strftime(timeBuf, sizeof(timeBuf), "%Y-%m-%d %H:%M", &t);
+        localtime_s(&t, &now);//存储本地时间后的时间戳
+        char timeBuf[64];//存储格式时间字符串
+        strftime(timeBuf, sizeof(timeBuf), "%Y-%m-%d %H:%M", &t);//4y 2mon 2d 2h 2min
         report << "\n报告生成时间: " << timeBuf << std::endl;
 
         report.close();
@@ -527,6 +527,5 @@ bool ReportGenerator::isTimeToGenerateReport() {
     struct tm t;
     localtime_s(&t, &now);
 
-    // 周一的星期值为1 (0-6表示星期的数值)
     return t.tm_wday == 1;  // 1表示周一
 }

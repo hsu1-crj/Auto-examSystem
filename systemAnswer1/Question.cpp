@@ -37,7 +37,7 @@ void Question::saveToFile(const std::string& filename) const {
 
 std::vector<Question> Question::loadFromFile(const std::string& filename) {
     std::vector<Question> questions;
-    std::ifstream ifs(filename);
+    std::ifstream ifs(filename);//输出文件流
     if (!ifs.is_open()) {
         std::cerr << "无法打开题库文件: " << filename << std::endl;
         return questions;
@@ -51,14 +51,14 @@ std::vector<Question> Question::loadFromFile(const std::string& filename) {
             // 修改ID提取方式，使用更可靠的方法
             size_t start = line.find('[') + 1;
             size_t end = line.find(']');
-            if (end != std::string::npos && start < end) {
+            if (end != std::string::npos && start < end) {//是否能查询到]
                 currentId = line.substr(start, end - start);
             }
         }
         else if (line.rfind("题干：", 0) == 0) {
             content = line.substr(6);
         }
-        else if (line.rfind("选项：", 0) == 0) {
+        else if (line.rfind("选项：", 0) == 0) {//找到选项：就正常进行
             options.clear();
             std::istringstream iss(line.substr(6));
             std::string opt;
@@ -101,9 +101,9 @@ Question Question::createFromInput() {
     std::cout << "请输入选项（空格分隔）: ";
     std::string opts;
     std::getline(std::cin, opts);
-    std::istringstream iss(opts);
+    std::istringstream iss(opts);//按空格提取每个单词
     for (std::string opt; iss >> opt; ) {
-        options.push_back(opt);
+        options.push_back(opt);//容器末尾添加元素
     }
 
     std::cout << "请输入答案（逗号分隔）: ";

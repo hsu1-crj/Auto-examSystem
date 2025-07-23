@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "D:\\cppPractice\\systemAnswer1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\TeacherLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\TeacherLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\StudentLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\StudentLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Student.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Question.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ReportGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ReportGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Question.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -51,16 +31,36 @@
       "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ExamGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\TeacherLogin.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\QuestionModifier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\TeacherLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\Student.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\StudentLogin.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ReportGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ExamGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\ExamModifier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|solutionrelative:systemAnswer1\\QuestionModifier.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8807426-D707-4E5D-9029-5522E2559C6B}|systemAnswer1\\systemAnswer1.vcxproj|D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -78,7 +78,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,78 +90,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherLogin.h",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h",
-              "RelativeDocumentMoniker": "systemAnswer1\\TeacherLogin.h",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h",
-              "RelativeToolTip": "systemAnswer1\\TeacherLogin.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-07T08:06:23.145Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TeacherLogin.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\TeacherLogin.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp",
-              "RelativeToolTip": "systemAnswer1\\TeacherLogin.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-07T08:06:38.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentLogin.h",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h",
-              "RelativeDocumentMoniker": "systemAnswer1\\StudentLogin.h",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h",
-              "RelativeToolTip": "systemAnswer1\\StudentLogin.h",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBIAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T05:30:30.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\main.cpp",
               "RelativeDocumentMoniker": "systemAnswer1\\main.cpp",
               "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\main.cpp",
               "RelativeToolTip": "systemAnswer1\\main.cpp",
-              "ViewState": "AgIAAPMAAAAAAAAAAAAAANgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAHwAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-02T11:00:31.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.h",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h",
-              "RelativeDocumentMoniker": "systemAnswer1\\Student.h",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h",
-              "RelativeToolTip": "systemAnswer1\\Student.h",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T11:33:48.332Z",
+              "DocumentIndex": 8,
+              "Title": "QuestionModifier.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\QuestionModifier.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp",
+              "RelativeToolTip": "systemAnswer1\\QuestionModifier.cpp",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAMoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T13:41:07.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "ReportGenerator.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\ReportGenerator.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.cpp",
+              "RelativeToolTip": "systemAnswer1\\ReportGenerator.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T12:27:13.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Question.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\Question.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp",
+              "RelativeToolTip": "systemAnswer1\\Question.cpp",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAGwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T15:26:32.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Student.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\Student.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp",
+              "RelativeToolTip": "systemAnswer1\\Student.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T14:51:54.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "StudentLogin.cpp",
               "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.cpp",
               "RelativeDocumentMoniker": "systemAnswer1\\StudentLogin.cpp",
               "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.cpp",
               "RelativeToolTip": "systemAnswer1\\StudentLogin.cpp",
-              "ViewState": "AgIAAJsAAAAAAAAAAADwv7cAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-04T05:28:46.037Z",
               "EditorCaption": ""
@@ -169,45 +169,81 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Student.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\Student.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.cpp",
-              "RelativeToolTip": "systemAnswer1\\Student.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA==",
+              "Title": "ExamGenerator.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\ExamGenerator.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.cpp",
+              "RelativeToolTip": "systemAnswer1\\ExamGenerator.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEQAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T14:51:54.416Z",
+              "WhenOpened": "2025-03-19T09:32:04.801Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExamModifier.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\ExamModifier.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.cpp",
+              "RelativeToolTip": "systemAnswer1\\ExamModifier.cpp",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAA4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-02T13:44:36.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeacherLogin.h",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h",
+              "RelativeDocumentMoniker": "systemAnswer1\\TeacherLogin.h",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.h",
+              "RelativeToolTip": "systemAnswer1\\TeacherLogin.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-07T08:06:23.145Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Question.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\Question.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Question.cpp",
-              "RelativeToolTip": "systemAnswer1\\Question.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "TeacherLogin.cpp",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp",
+              "RelativeDocumentMoniker": "systemAnswer1\\TeacherLogin.cpp",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\TeacherLogin.cpp",
+              "RelativeToolTip": "systemAnswer1\\TeacherLogin.cpp",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T15:26:32.281Z",
+              "WhenOpened": "2025-05-07T08:06:38.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReportGenerator.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\ReportGenerator.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.cpp",
-              "RelativeToolTip": "systemAnswer1\\ReportGenerator.cpp",
-              "ViewState": "AgIAAKgBAAAAAAAAAAAswLIBAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-03T12:27:13.38Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "Student.h",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h",
+              "RelativeDocumentMoniker": "systemAnswer1\\Student.h",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\Student.h",
+              "RelativeToolTip": "systemAnswer1\\Student.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T11:33:48.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
+              "Title": "StudentLogin.h",
+              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h",
+              "RelativeDocumentMoniker": "systemAnswer1\\StudentLogin.h",
+              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\StudentLogin.h",
+              "RelativeToolTip": "systemAnswer1\\StudentLogin.h",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwBIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T05:30:30.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ExamGenerator.h",
               "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.h",
               "RelativeDocumentMoniker": "systemAnswer1\\ExamGenerator.h",
@@ -219,19 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ExamModifier.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\ExamModifier.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.cpp",
-              "RelativeToolTip": "systemAnswer1\\ExamModifier.cpp",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAuwDIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T13:44:36.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ExamModifier.h",
               "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamModifier.h",
               "RelativeDocumentMoniker": "systemAnswer1\\ExamModifier.h",
@@ -243,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "ReportGenerator.h",
               "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ReportGenerator.h",
               "RelativeDocumentMoniker": "systemAnswer1\\ReportGenerator.h",
@@ -252,30 +276,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-03T12:26:48.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ExamGenerator.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\ExamGenerator.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\ExamGenerator.cpp",
-              "RelativeToolTip": "systemAnswer1\\ExamGenerator.cpp",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAwEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-19T09:32:04.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "QuestionModifier.cpp",
-              "DocumentMoniker": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp",
-              "RelativeDocumentMoniker": "systemAnswer1\\QuestionModifier.cpp",
-              "ToolTip": "D:\\cppPractice\\systemAnswer1\\systemAnswer1\\QuestionModifier.cpp",
-              "RelativeToolTip": "systemAnswer1\\QuestionModifier.cpp",
-              "ViewState": "AgIAANYAAAAAAAAAAAAAwPYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-02T13:41:07.672Z"
             },
             {
               "$type": "Document",
